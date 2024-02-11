@@ -38,10 +38,39 @@ if (isset($_GET['delete_all'])) {
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="../css/cart.css">
+    
 
 </head>
 
 <body>
+
+    <!-- navbar section  -->
+    <div class="header">
+        <div class="container">
+            <nav id="navbar">
+                <div id="logo">
+                    <a href="project.html">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul>
+                    <li class="item"><a href="project.html">Home</a></li>
+                    <!-- <li class="item"><a href="offer.html">Offers</a></li> -->
+                    <li class="item"><a href="products.html">Trending</a></li>
+                    <li class="item"><a href="#">Categories</a></li>
+                    <li class="item"><a href="#contact">Contact us</a></li>
+                    <li class="item"><a href="signin.html">Sign in</a></li>
+                    <li class="item"> <input id="search" type="text" placeholder="Search Your Gadget!"></li>
+                    <li class="cart">
+                        <a href="../php/cart.php">Cart
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
 
     <div class="container">
 
@@ -93,8 +122,7 @@ if (isset($_GET['delete_all'])) {
                         <td><a href="products.php" class="option-btn" style="margin-top: 0;">Continue shopping</a></td>
                         <td colspan="3">Grand total</td>
                         <td>NRS: <?php echo $grand_total; ?>/-</td>
-                        <td><a href="cart.php?delete_all" onclick="return confirm('are you sure you want to delete all?');" 
-                        class="delete-btn"> <i class="fas fa-trash"></i> Delete all </a></td>
+                        <td><a href="cart.php?delete_all" onclick="return confirm('are you sure you want to delete all?');" class="delete-btn"> <i class="fas fa-trash"></i> Delete all </a></td>
                     </tr>
 
                 </tbody>
