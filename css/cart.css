@@ -1,0 +1,177 @@
+
+/* Reset some default styles */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* For Cart section */
+
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #83def3;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.shopping-cart {
+   background-color: #ffb0b0;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+   text-align: center;
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+}
+
+thead th {
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+   text-align: left;
+}
+
+tbody td {
+   padding: 10px;
+   border-bottom: 1px solid #ccc;
+}
+
+tbody img {
+   max-width: 100px;
+   height: auto;
+}
+
+.update-btn {
+   background-color: #4caf50;
+   color: #fff;
+   padding: 5px 10px;
+   border: none;
+   cursor: pointer;
+}
+
+.delete-btn {
+   color: #ff0800;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.option-btn {
+   text-decoration: none;
+   padding: 5px 10px;
+   background-color: #333;
+   color: #fff;
+}
+
+.checkout-btn {
+   text-align: right;
+   margin-top: 20px;
+}
+
+.btn {
+   padding: 10px 20px;
+   background-color: #ff0000;
+   color: #fff;
+   text-decoration: none;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn.disabled {
+   background-color: #ccc;
+   cursor: not-allowed;
+}
+        
+
+/* For checkout section */
+
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f4;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.checkout-form {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+   text-align: center;
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+.display-order {
+   margin-bottom: 20px;
+}
+
+.display-order span {
+   display: block;
+   margin-bottom: 10px;
+}
+
+.grand-total {
+   font-weight: bold;
+}
+
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.inputBox {
+   flex: 1 1 300px;
+   margin-bottom: 20px;
+}
+
+.inputBox span {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+input,
+select {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   margin-top: 5px;
+}
+
+.btn {
+   padding: 10px 20px;
+   background-color: #333;
+   color: #fff;
+   text-decoration: none;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   display: inline-block;
+}
+
+

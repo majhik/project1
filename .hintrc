@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "meta-viewport": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id": "off"
+      }
+    ],
+    "detect-css-reflows/layout": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off"
+  }
+}
