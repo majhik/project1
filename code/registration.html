@@ -6,30 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/registration.css" />
     <title>SignUp-GadgetsBazzar</title>
+    <script>
+        function validateForm() {
+            var email = document.forms["registrationForm"]["email"].value;
+            var password = document.forms["registrationForm"]["password"].value;
+            var confirmPassword = document.forms["registrationForm"]["confirmPassword"].value;
+    
+            // Regular expression for password validation
+            var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[a-zA-Z\d!@#$%^&*()_+]{6,}$/;
+    
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            // You can add more validation rules for email format if needed
+    
+            if (!passwordPattern.test(password)) {
+                alert("Password must be at least 6 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character");
+                return false;
+            }
+    
+            if (confirmPassword == "") {
+                alert("Confirm Password must be filled out");
+                return false;
+            }
+    
+            if (password !== confirmPassword) {
+                alert("Password and Confirm Password do not match");
+                return false;
+            }
+        }
+    </script>
+    
 </head>
 
 <body>
     <div class="signup-page">
-        <form action="../php/registration.php" method="POST">
+        <form name="registrationForm" action="../php/registration.php" method="POST" onsubmit="return validateForm()">
             <h1>Register</h1>
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name" placeholder="Enter First Name" required>
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" placeholder="Enter Last Name" required>
             <label for="email">Email</label>
             <input type="text" name="email" placeholder="Enter Email" required>
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="Enter Password" required>
-            <label for="Confirm_password">Confirm Password</label>
-            <input type="password" name="Confirm_password" placeholder="Confirm Password" required>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
             <button type="submit" id="register">Register</button>
         </form>
         <p>By clicking the signup button, you agree to our<br>
             <a href="#">Terms and condition</a> and <a href="#">Privacy and Policy</a>
+        </p> <br>
+        <p class="para-2">Already Signed Up! <a href="../code/signin.html">Sign-In Here!</a>
         </p>
     </div>
-    <p class="para-2">Already Signed Up? <a href="../signin.html">Sign-In here</a>
-    </p>
 </body>
 
 </html>

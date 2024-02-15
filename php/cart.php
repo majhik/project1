@@ -34,11 +34,11 @@ if (isset($_GET['delete_all'])) {
     <title>shopping cart</title>
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- custom css file link  -->
+    <script src="https://kit.fontawesome.com/d587626e21.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.3/css/all.min.css" integrity="sha384-eznd5zqXxGq+gFJClHq28KZlaNU9RTRcL4pl1PbpKTepiZhL5K4z4fPeU0zniqz6" crossorigin="anonymous">
+    <script src="../javascript/index.js"></script>
     <link rel="stylesheet" href="../css/cart.css">
-    
+
 
 </head>
 
@@ -46,20 +46,20 @@ if (isset($_GET['delete_all'])) {
 
     <!-- navbar section  -->
     <div class="header">
-        <div class="container">
+        <div class="container-nav">
             <nav id="navbar">
                 <div id="logo">
-                    <a href="project.html">
+                    <a href="../code/project.html">
                         <img src="../img/logo.png" alt="logo">
                     </a>
                 </div>
                 <ul>
-                    <li class="item"><a href="project.html">Home</a></li>
+                    <li class="item"><a href="../code/project.html">Home</a></li>
                     <!-- <li class="item"><a href="offer.html">Offers</a></li> -->
-                    <li class="item"><a href="products.html">Trending</a></li>
+                    <li class="item"><a href="../code/products.html">Trending</a></li>
                     <li class="item"><a href="#">Categories</a></li>
                     <li class="item"><a href="#contact">Contact us</a></li>
-                    <li class="item"><a href="signin.html">Sign in</a></li>
+                    <li class="item"><a href="../code/signin.html">Sign in</a></li>
                     <li class="item"> <input id="search" type="text" placeholder="Search Your Gadget!"></li>
                     <li class="cart">
                         <a href="../php/cart.php">Cart
@@ -72,7 +72,7 @@ if (isset($_GET['delete_all'])) {
     </div>
 
 
-    <div class="container">
+    <div class="container-cart">
 
         <section class="shopping-cart">
 
@@ -110,7 +110,8 @@ if (isset($_GET['delete_all'])) {
                                         <input type="submit" value="update" name="update_update_btn">
                                     </form>
                                 </td>
-                                <td>$<?php echo $sub_total = number_format($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</td>
+                                <td>$<?php echo $sub_total = number_format($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-
+                                </td>
                                 <td><a href="cart.php?remove=<?php echo $fetch_cart['id']; ?>" onclick="return confirm('remove item from cart?')" class="delete-btn"> <i class="fas fa-trash"></i> Remove</a></td>
                             </tr>
                     <?php
@@ -137,8 +138,38 @@ if (isset($_GET['delete_all'])) {
 
     </div>
 
-    <!-- custom js file link  -->
-    <script src="../js/cart.js"></script>
+
+    <!--footer-->
+    <section id="contact">
+        <div class="footer">
+            <div class="col-1">
+                <h2>Usefull Links</h3>
+                    <a href="#">Coupons</a>
+                    <a href="#">Blog Post</a>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Join affiliate</a>
+            </div>
+            <div class="col-2">
+                <h2>Feedback</h3>
+                    <form>
+                        <input type="text" placeholder="Enter your feedback">
+                        <br>
+                        <button id="feedback" onclick="submitted()" type="submit">Submit feedback </button>
+                    </form>
+                    
+                </div>
+                <div class="col-3">
+                    <h2>Contact</h2>
+                    <p id="contact"> Phone: 031-560061 <br>gadgetsbazar@gmail.com<br>Imadol-4, Lalitpur</p>
+                </div>
+        </div>
+                <!--Copyright section-->
+            <div class="copyright">
+                <hr>
+                <h3>Copyright &copy; www.GadgetsBazzar.com. All rights reserved </h3>
+            </div>
+    </section>
+
 
 </body>
 

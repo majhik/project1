@@ -9,6 +9,7 @@
 #navbar {
   display: flex;
   margin-left: 100px;
+ 
 }
 
 nav {
@@ -16,8 +17,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 0px;
-
+ 
 }
 
 nav ul {
@@ -28,7 +28,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-left: 13px;
+  margin-left: 10px;
 }
 
 .cart {
@@ -57,8 +57,8 @@ nav ul li {
 }
 
 #logo img {
-  height: 111px;
-  width: 109px;
+  height: 61px;
+  width: 59px;
 }
 
 #search {
@@ -79,12 +79,10 @@ nav ul li {
 }
 
 
-
-
 /* home section */
 .header {
-  background: radial-gradient(#97f3df, #32c6eb);
-  padding-bottom: 40px;
+  background: whitesmoke;
+  padding-bottom: 80px;
 
 }
 
@@ -104,7 +102,6 @@ nav ul li {
 
 .col-2 {
   flex-basis: 50%;
-  min-width: 20px;
   padding-left: 120px;
 
 }
@@ -115,10 +112,11 @@ nav ul li {
 }
 
 .col-2 h1 {
-  font-size: 60px;
+  font-size: 40px;
   line-height: 80px;
-  margin: 35px 30px;
-  padding-bottom: 115px;
+  margin: 15px 30px;
+  
+
 }
 
 #greeting {
@@ -156,19 +154,22 @@ nav ul li {
 
 
 
-/* .btn {
+.btn {
   display: inline-block;
   background: rgb(255, 156, 156);
   color: #000;
   padding: 8px 10px;
-  margin: 40px 110px;
+  margin: 0px 110px 200px;
+  margin-left: 200px;
   border-radius: 15px;
   text-decoration: none;
-} */
+}
 
-/* .btn:hover {
+.btn:hover {
   background: #ffb6b6;
-} */
+}
+
+
 
 
 .col-2 img {
@@ -277,10 +278,6 @@ form button:hover {
   scroll-behavior: d;
 }
 
-.contact-section {
-  margin-bottom: 0px;
-}
-
 
 
 /* Add this CSS code to style the product section */
@@ -288,7 +285,7 @@ form button:hover {
   display: flex;
   justify-content: space-around;
   padding: 30px 30px 30px 30px;
-  background: radial-gradient(#70e4ed, #32c6eb);
+  background: whitesmoke;
 
 }
 

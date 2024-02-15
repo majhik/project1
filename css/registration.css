@@ -1,88 +1,94 @@
 /* CSS Reset */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 
 }
-body{
- 
+
+body {
+
   /* background: radial-gradient(#eef397,#32c6eb); */
-  background: radial-gradient(#739db7,#32c6eb);
-    font-family: 'Roboto' , sans-serif;
-    
+  background: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+
 }
-  .signup-page{
-    height: 530px;
-    width: 380px;
-   /*   border: 1px solid black;    */
-    margin: auto;
-    margin-top: 40px;
-    background: radial-gradient(#739db7,#32c6eb);
-    border-radius: 14px;
-    border: 0.2rem solid black;
 
-  }
+.signup-page {
+  height: 450px;
+  width: 340px;
+  margin: auto;
+  margin-top: 10%;
+  background: whitesmoke;
+  border-radius: 14px;
+  border: 0.2rem solid black;
 
-  form{
-    width: 300px;
-    margin-left: 20px;
-  }
-  form label{
-    display: flex;
-    margin-top: 20px;
-    font-size: 18px;
-    margin-left: 18px;
-  }
+}
 
-  form input{
+form {
+  width: 300px;
+  margin-left: 0px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  margin-left: 18px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  outline: none;
+}
+
+#register {
     width: 100%;
-    padding: 7px;
-    margin-left: 18px;
+    padding: 0.5rem;
     border: none;
-    border: 1px solid gray;
-    border-radius: 8px;
-    outline: none;
-  }
-
-  #register {
-    width: 100px;
-    margin-top: 15px;
-    margin-left: 118px;
-    height: 35px;
-    border: 2px solid black;
-    border-radius: 15px;
-    background-color: rgb(0, 166, 255);
-    font-size: 18px;
-
-
-  }
-
-  #register:hover{
-    background-color: rgb(253, 117, 117);
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 0.3rem;
+    background-color: #f56f6f;
+    color: #fff;
+    font-size: 1rem;
     cursor: pointer;
-  }
-  p{
-    text-align: center;
-    padding-top: 10px;
-    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#register:hover {
+  background-color: rgb(255, 181, 181); /* Slightly lighter color on hover */
+  cursor: pointer;
+}
 
 
-  }
+p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
 
-  .para-2{
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    margin-top: 10px;
-  }
 
-  .para-2 a{
+}
 
-    color: rgb(255, 38, 0);
+.para-2 {
+  text-align: center;
+  color: rgb(5, 0, 0);
+  font-size: 15px;
+  margin-top: -10px;
+}
 
-  }
-  h1{
-    text-align: center;
-    padding-top: 20px;
-  }
+.para-2 a {
+
+  color: rgb(253, 39, 2);
+
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}

@@ -3,15 +3,11 @@ include "db.php";
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
-    $firstName = $_POST["first_name"];
-    $lastName = $_POST["last_name"];
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $ConfirmPassword = $_POST["Confirm_password"];
+    $Confirm_password = $_POST["Confirm_password"];
 
     // Validate and sanitize inputs (you may want to add more robust validation)
-    $firstName = mysqli_real_escape_string($conn, $firstName);
-    $lastName = mysqli_real_escape_string($conn, $lastName);
     $email = mysqli_real_escape_string($conn, $email);
 
     // Perform password hashing for security
@@ -27,9 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: This email is already registered.";
     } else {
         // Insert user data into the database using prepared statement
-        $stmt = $conn->prepare("INSERT INTO user (first_name, last_name, email, password, Confirm_password) 
-        VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssss", $firstName, $lastName, $email, $hashedPassword1, $hashedPassword2);
+        $stmt = $conn->prepare("INSERT INTO user (email, password, Confirm_password) 
+        VALUES ( ?, ?, ?)");
+        $stmt->bind_param("sss", $email, $hashedPassword1, $hashedPassword2);
 
         if ($stmt->execute()) {
             // Registration successful

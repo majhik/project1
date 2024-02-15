@@ -7,17 +7,92 @@
    box-sizing: border-box;
 }
 
+/* Nagivation bar */
+#navbar {
+   display: flex;
+   padding-left: 115px;
+  
+ }
+ 
+ nav {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+   
+}
+
+nav ul {
+   display: inline-block;
+   list-style-type: none;
+   margin-right: 100px;
+}
+
+nav ul li {
+   display: inline-block;
+   margin-left: 10px;
+ }
+ 
+ .cart {
+   font-size: 20px;
+ }
+ 
+ .cart:hover {
+   color: #f56f6f;
+ 
+ }
+ 
+ 
+ #navbar ul li a:hover {
+   color: #f56f6f;
+ }
+ 
+ #navbar ul li a {
+   font-size: 18px;
+   text-decoration: none;
+   padding: 8px 10px;
+   color: black;
+ }
+ 
+ #logo {
+   margin: 15px 10px;
+ }
+ 
+ #logo img {
+   height: 61px;
+   width: 59px;
+ }
+ 
+ #search {
+   padding: 5px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   outline: none;
+   font-size: 14px;
+ }
+ 
+ #search::placeholder {
+   color: #f56f6f;
+ }
+ 
+ #search:focus {
+   border-color: #66afe9;
+   box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+ }
+ 
+
 /* For Cart section */
 
 body {
    font-family: 'Arial', sans-serif;
-   background-color: #83def3;
+   background-color: #f56f6f;
 }
 
-.container {
+.container-cart {
    max-width: 1200px;
-   margin: 0 auto;
    padding: 20px;
+   padding-bottom: 150px;
 }
 
 .shopping-cart {
@@ -105,7 +180,7 @@ body {
    background-color: #f4f4f4;
 }
 
-.container {
+.container-cart {
    max-width: 1200px;
    margin: 0 auto;
    padding: 20px;
@@ -174,6 +249,105 @@ select {
    display: inline-block;
 }
 
+ 
 
 
+/*  footer  */
+.footer {
+  margin-top: 200px;
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 20px 70px;
+  background: #000000;
+  color: #efefef;
+  display: flex;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.footer div h3 {
+  font-weight: 300px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.footer div p {
+  margin-bottom: 2px;
+}
+
+.col-2 {
+  flex-grow: 2;
+
+}
+
+
+.col-1 a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #efefef;
+
+}
+
+form input {
+  width: 400px;
+  height: 35px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: transparent;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #32c6eb;
+}
+
+
+
+
+/* .social-icons {
+  margin-top: 30px;
+}
+
+.social-icons i {
+  font-size: 22Px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+}
+ */
+
+/*  copyright section */
+.copyright {
+  background: #000000;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.copyright h3 {
+  padding: 10px 0;
+  margin-left: 80px;
+  margin-bottom: 0px;
+
+}
+
+.contact {
+
+  scroll-behavior: d;
+}
 
